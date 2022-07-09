@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 :root {
-  --background: #f5f5f5;
+  --background: #fff;
+  --grey-background: #EBECEE;
   --banner-backgroun: linear-gradient(180deg, #23232e 15.49%, #5b5b77 165.37%);
-  --nav-background: #23232e;
+  --dark-background: #23232e;
+
   --white-text: #fff;
+  --purple-text: #23232e;
 
   font-size: 62.5%;
 }
@@ -21,16 +24,18 @@ a {
   color:var(--white-text);
 }
 
-/* Header Design */
+/* ======== Header Design ======== */
 
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 10vh;
+  z-index: 999;
   padding: 1rem 2rem;
-
-  background: #23232e;
+  position: fixed;
+  background: var(--dark-background);
 }
 
 #logo {
@@ -132,13 +137,15 @@ a {
   font-weight: 600;
 }
 
-/* Banner Design */
+/* ======== Banner Design ======== */
 
 .initial-banner {
+  position: relative;
+  top: 10vh;
   background: var(--banner-backgroun);
   color: var(--white-text);
   text-align: center;
-  padding: 3.2rem 3rem;
+  padding: 3.2rem 2rem;
   margin-bottom: 2rem;
 }
 
@@ -156,7 +163,7 @@ a {
   background: none;
   border: 1px solid #fff;
   color: var(--white-text);
-  border-radius: 2.4rem;
+  border-radius: 1rem;
   padding: 1rem;
   width: 100%;
   text-align: left;
@@ -168,4 +175,125 @@ a {
   color: var(--white-text);
   background: url(/img/Search-icon.svg) no-repeat;
   background-position: 1.4rem;
+}
+
+/* ======== last releases ======== */
+
+.carousel{
+  position: relative;
+  top: 10vh;
+  margin-bottom: 2rem;
+  padding: 0 0 1.5rem 0;
+  background: var(--grey-background);
+}
+
+.title-carousel{
+  margin-bottom: .8rem;
+  padding-bottom: .8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--purple-text);
+  background: var(--background);
+}
+
+.swiper{
+  margin-bottom: 2rem;
+}
+
+.swiper-slide img{
+  box-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  display: none;
+}
+
+.swiper-pagination{
+  position: initial;
+  margin-top: .7rem;
+}
+
+.card{
+  margin-inline: 2rem;
+  background: var(--dark-background);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 .6rem .7rem rgba(0, 0, 0, 0.25);
+}
+
+.description-card{
+  display: flex;
+  align-items: flex-start;
+  color: var(--white-text);
+  margin-bottom: 1rem;
+}
+
+.description > *{
+  margin-bottom: .8rem;
+}
+
+.title-description{
+  font-size: 1.4rem;
+}
+
+.title-book-description{
+  font-size: 1.6rem;
+}
+
+.text-book-description{
+  font-size: 1.4rem;
+}
+
+.description-card img{
+  width: 40%;
+  margin-left: .8rem;
+  border-radius: 1rem;
+}
+
+.description-card span > img{
+  margin: 0;
+}
+
+.buttons-card{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.buttons{
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  list-style: none;
+}
+
+.buttons button{
+  background: none;
+  border: none;
+}
+
+.buttons img{
+  width: 100%;
+}
+
+.buttons-card a > button{
+  padding: 1.2rem 1.6rem;
+  border-radius: 1rem;
+  border: none;
+  background: var(--background);
+  color: var(--purple-text);
+  font-weight: bold;
+}
+
+/* ======== Best sellers ======== */
+
+.best-sellers{
+  position: relative;
+  top: 10vh;
+  padding: 0 0 1.5rem 0;
+  background: var(--grey-background);
 }

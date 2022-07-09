@@ -10,3 +10,14 @@ function toggleMenu(event){
 
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
+
+// SwiperJS
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});

@@ -1,48 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alurabooks</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alurabooks</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a id="logo" href="">Books</a>
+      <nav id="nav">
+        <button class="btn-nav">
+          <a href=""><img src="/img/Favoritos.svg" alt="User button" /></a>
+        </button>
+        <button class="btn-nav">
+          <a href=""><img src="/img/Sacola.svg" alt="User button" /></a>
+        </button>
+        <button class="btn-nav">
+          <a href=""><img src="/img/Usuário.svg" alt="User button" /></a>
+        </button>
+        <button id="btn-mobile">
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Produtos</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header id="header">
-    <a id="logo" href="">Books</a>
-    <nav id="nav">
-      <button class="btn-nav">
-        <a href=""><img src="/img/Favoritos.svg" alt="User button"></a>
-      </button>
-      <button class="btn-nav">
-        <a href=""><img src="/img/Sacola.svg" alt="User button"></a>
-      </button>
-      <button class="btn-nav">
-        <a href=""><img src="/img/Usuário.svg" alt="User button"></a>
-      </button>
-      <button id="btn-mobile">
-        <span id="hamburguer"></span>
-      </button>
-      <ul id="menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">Produtos</a></li>
-        <li><a href="">Contato</a></li>
-        <li><a href="">Sobre</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section class="initial-banner">
-    <h2 class="title-banner">
-      Já sabe por onde começar?
-    </h2>
-    <p class="text-banner">
-      Encontre em nossa estante o que precisa para seu desenvolvimento!
-    </p>
-    <input type="search" name="" class="inpt-search" placeholder="Qual será sua próxia pesquisa?">
-  </section>
+    <section class="initial-banner">
+      <h2 class="title-banner">Já sabe por onde começar?</h2>
+      <p class="text-banner">
+        Encontre em nossa estante o que precisa para seu desenvolvimento!
+      </p>
+      <input
+        type="search"
+        name=""
+        class="inpt-search"
+        placeholder="Qual será sua próxia pesquisa?"
+      />
+    </section>
 
-  <script src="/script.js"></script>
-</body>
+    <section class="carousel">
+      <h2 class="title-carousel">Últimos lançamentos</h2>
+      
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/img/books/Angular.svg" alt="Livro sobre Angular da Alura book"></div>
+          <div class="swiper-slide"><img src="/img/books/Guia Front-end.svg" alt="Livro sobre o guia do Front-End"></div>
+          <div class="swiper-slide"><img src="/img/books/Javascript.svg" alt="Livro sobre Javascript"></div>
+          <div class="swiper-slide"><img src="/img/books/UX.svg" alt="Livro sobre UX Design"></div>
+          <div class="swiper-slide"><img src="/img/books/UX.svg" alt="Livro sobre UX Design"></div>
+          <div class="swiper-slide"><img src="/img/books/UX.svg" alt="Livro sobre UX Design"></div>
+          
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="description-card">
+          <!-- 1º coluna -->
+          <div class="description">
+            <h3 class="title-description">Talvez você também se interesse por...</h3>
+            <h2 class="title-book-description">Angular 11 e Firebase</h2>
+            <p class="text-book-description">Construindo uma aplicação integrada com a plataforma do Google.</p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="/img/Angular.svg" alt="">
+        </div>
+        <!-- 2º linha -->
+        <div class="buttons-card">
+          <ul class="buttons">
+            <!-- 1º Coluna -->
+            <li><button><img src="/img/Favoritos.svg" alt=""></button></li>
+            <li><button><img src="/img/Sacola.svg" alt=""></button></li>
+          </ul>
+          
+          <!-- 2º Coluna -->
+          <a href="#"><button>Saiba mais</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-sellers">
+      <h2 class="title-carousel">
+        MAIS VENDIDOS
+      </h2>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/img/books/Angular.svg" alt="Livro sobre Angular da Alura book"></div>
+          <div class="swiper-slide"><img src="/img/books/Guia Front-end.svg" alt="Livro sobre o guia do Front-End"></div>
+          <div class="swiper-slide"><img src="/img/books/Javascript.svg" alt="Livro sobre Javascript"></div>
+          <div class="swiper-slide"><img src="/img/books/UX.svg" alt="Livro sobre UX Design"></div>
+          <div class="swiper-slide"><img src="/img/books/UX.svg" alt="Livro sobre UX Design"></div>
+          <div class="swiper-slide"><img src="/img/books/UX.svg" alt="Livro sobre UX Design"></div>
+          
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="description-card">
+          <!-- 1º coluna -->
+          <div class="description">
+            <span><img src="/img/Estrelinhas.svg" alt=""></span>
+            <h2 class="title-author-description">Autora do mês</h2>
+            <p class="text-author-description">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="/img/Perfil-escritora 1.svg" alt="">
+        </div>
+        <!-- 2º linha -->
+        <div class="buttons-card">
+          <ul class="buttons">
+            <!-- 1º Coluna -->
+            <li><button><img src="/img/Favoritos.svg" alt=""></button></li>
+            <li><button><img src="/img/Sacola.svg" alt=""></button></li>
+          </ul>
+          
+          <!-- 2º Coluna -->
+          <a href="#"><button>Saiba mais</button></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
 </html>
