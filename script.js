@@ -6,10 +6,10 @@ function toggleMenu(event){
   if(event.type === 'touchstart'){
     event.preventDefault();
   }
-};
+}
 
-btnMobile.addEventListener('click', toggleMenu)
-btnMobile.addEventListener('touchstart', toggleMenu)
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
 // SwiperJS
 const swiper = new Swiper('.swiper', {
