@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 :root {
   --background: #fff;
   --grey-background: #EBECEE;
   --banner-backgroun: linear-gradient(180deg, #23232e 15.49%, #5b5b77 165.37%);
   --dark-background: #23232e;
-
+  --purple: #23232e;
   --white-text: #fff;
   --purple-text: #23232e;
 
@@ -331,4 +332,50 @@ section{
   color: var(--purple-text);
   font-size: 1.4rem;
   font-weight: 700;
+}
+
+/* ======== Contact ======== */
+
+.contact{
+  padding: 3.2rem 2rem;
+}
+
+.title-contact{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--purple-text);
+  margin-bottom: .8rem;
+}
+
+.text-contact{
+  font-weight: 300;
+  color: var(--purple-text);
+  margin-bottom: 2.4rem;
+}
+
+.inpt-email{
+  background: none;
+  border: 1px solid #23232e;
+  color: var(--purple-text);
+  border-radius: 2.4rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.inpt-email::placeholder{
+  font-weight: 400;
+  padding-left: 4.4rem;
+  text-align: left;
+  color: var(--purple-text);
+  background: url(/img/email-icon.svg) no-repeat;
+  background-position: 1.4rem;
+}
+
+footer{
+  position: relative;
+  top: 10vh;
+  border-top: 2px solid var(--purple);
+  padding: 1.8rem;
+  background: var(--grey-background);
 }
