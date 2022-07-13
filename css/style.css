@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url(/css/navbar.css);
+@import url(/css/banner.css);
+@import url(/css/last-releases.css);
+@import url(/css/best-sellers.css);
+@import url(/css/topics.css);
+@import url(/css/contact.css);
+
+:root {
+  --background: #fff;
+  --grey-background: #EBECEE;
+  --banner-backgroun: linear-gradient(180deg, #23232e 15.49%, #5b5b77 165.37%);
+  --dark-background: #23232e;
+  --purple: #23232e;
+  --white-text: #fff;
+  --purple-text: #23232e;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+section{
+  position: relative;
+  top: 10vh;
+}

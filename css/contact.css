@@ -1,0 +1,88 @@
+/* ======== Contact ======== */
+
+.contact{
+  padding: 3.2rem 2rem;
+}
+
+.title-contact{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--purple-text);
+  margin-bottom: .8rem;
+}
+
+.text-contact{
+  font-weight: 300;
+  color: var(--purple-text);
+  margin-bottom: 2.4rem;
+}
+
+.inpt-email{
+  width: 100%;
+  padding: .8rem;
+  margin-bottom: 1rem;
+
+  background: none;
+  border: 1px solid #23232e;
+  color: var(--purple-text);
+  border-radius: 2.4rem;
+
+  text-align: left;
+}
+
+.inpt-email::placeholder{
+  font-weight: 400;
+  padding-left: 4.4rem;
+  text-align: left;
+  color: var(--purple-text);
+  background: url(/img/email-icon.svg) no-repeat;
+  background-position: 1.4rem;
+}
+
+.btn-contact{
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  
+}
+
+.btn-contact button{
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background: var(--dark-background);
+  color: var(--white-text);
+  font-weight: 500;
+}
+
+footer{
+  position: relative;
+  top: 10vh;
+  border-top: 2px solid var(--purple);
+  padding: 1.8rem;
+  background: var(--grey-background);
+}
+
+@media screen and (min-width: 900px){
+  .contact{
+    display: flex;
+    justify-content: center;
+    padding: 3.2rem 3rem;
+  }
+
+  .description-contact{
+    width: 40%;
+  }
+
+  .title-contact{
+    font-size: 2.4rem;
+  }
+
+  .action-contact{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}

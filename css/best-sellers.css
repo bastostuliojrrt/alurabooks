@@ -1,0 +1,12 @@
+/* ======== Best sellers ======== */
+
+.best-sellers{
+  padding-bottom: 2rem;
+  background: var(--grey-background);
+}
+
+@media screen and (min-width: 900px){
+  .best-sellers{
+    padding-bottom: 5rem;
+  }
+}

@@ -1,0 +1,57 @@
+/* ======== Banner Design ======== */
+
+.initial-banner {
+  background: var(--banner-backgroun);
+  color: var(--white-text);
+  text-align: center;
+  padding: 3.2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.title-banner{
+  font-size: 1.8rem;
+  margin-bottom: .8rem;
+}
+
+.text-banner{
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.inpt-search{
+  background: none;
+  border: 1px solid #fff;
+  color: var(--white-text);
+  border-radius: 2.4rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.inpt-search::placeholder{
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--white-text);
+  background: url(/img/Search-icon.svg) no-repeat;
+  background-position: 1.4rem;
+}
+
+@media screen and (min-width: 900px){
+  
+  .initial-banner{
+    padding: 8.4rem 15.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .title-banner{
+    font-size: 3.6rem;
+  }
+
+  .inpt-search{
+    width: 70%;
+  }
+
+  .inpt-search::placeholder{
+    background-position: 5.4rem;
+  }
+}
